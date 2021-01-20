@@ -1,0 +1,229 @@
+html, body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    min-height: 100%;
+}
+
+.masthead {
+    display: table;
+    height: 100vh;
+    width: 100%;
+
+    background-image: url(assets/img/overlay.png), url(assets/img/img3.jpg);
+
+    background-position: top left, center center;
+
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    background-size: auto, cover;
+
+    background-repeat: repeat, no-repeat;
+
+    background-attachment: fixed;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.18);
+}
+
+.masthead .content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.masthead .content h1 {
+    text-align: center;
+    text-shadow: 0px 2px 4px #000;
+    font-size: 55px;
+}
+
+.prominent {
+    color: #FFC107;
+}
+
+.masthead .content .slogan {
+    margin: 25px 0;
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+.masthead .content .request-container {
+    text-align: center;
+    padding: 15px;
+}
+
+.navbar {
+    border-bottom: none;
+    padding-top: 20px;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar.docked {
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    background: #2f5170;
+    background: -moz-linear-gradient(left,  #2f5170 0%, #566e70 100%);
+    background: -webkit-linear-gradient(left,  #2f5170 0%,#566e70 100%);
+    background: linear-gradient(to right,  #2f5170 0%,#566e70 100%);
+    padding: 0;
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse {
+        background: #2f5170;
+        background: -moz-linear-gradient(left,  #2f5170 0%, #566e70 100%);
+        background: -webkit-linear-gradient(left,  #2f5170 0%,#566e70 100%);
+        background: linear-gradient(to right,  #2f5170 0%,#566e70 100%);   
+    }
+}
+
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);   
+    font-size: 22px; 
+}
+
+.navbar .nav li a {
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);    
+}
+
+.navbar .nav li a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    height: 0;
+    border-bottom: 3px solid #ffc107;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;   
+}
+
+.navbar .nav li a:hover,
+.navbar .nav li a:focus {
+    background-color: transparent;
+}
+
+.navbar .navbar-toggle {
+    border-radius: 0;
+    border-color: #fff;
+}
+
+.navbar .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.btn.btn-default,
+.btn.btn-default:focus,
+.btn.btn-default:active {
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 0;
+    border: 2px solid #ffc107;
+    background-color: transparent;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn.btn-default:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.quote {
+    font-size: 25px;
+    font-style: italic;
+    padding: 20px 0;
+    line-height: 40px;
+    text-align: center;
+}
+
+.quote .author {
+    color: #888;       
+}
+
+.section-heading {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.image-center {
+    display: block;
+    margin: 0 auto;
+}
+
+.price {
+    text-align: center;
+    color: #ffc107;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+.feature-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.feature-list .feature {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.feature-list .feature i {
+    padding-right: 5px;
+    color: #00ca00;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.btn.btn-default.btn-submit {
+    color: #333;
+    text-shadow: none;
+}
+
+.footer {
+    height: 50px;
+}
+
+.footer p {
+    line-height: 22px;
+    margin: 0;
+}
+
+.footer a {
+    cursor: pointer;
+}
+
+.facebook {
+    font-size: 18px;
+    margin: 10px;
+    display: inline-block;
+    color: #fff;
+    background-color: #337ab7;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    -webkit-transition: box-shadow 0.3s ease-in-out;
+    -moz-transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.facebook:hover {
+    color: #fff;
+    box-shadow: 0px 0px 5px #333;
+}
