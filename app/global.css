@@ -1,0 +1,143 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-neutral-0: #ffffff;
+  --color-neutral-50: #f9f9f9;
+  --color-neutral-100: #f6f6f6;
+  --color-neutral-200: #efefef;
+  --color-neutral-300: #d8d8d8;
+  --color-neutral-400: #a5a5a5;
+  --color-neutral-500: #757575;
+  --color-neutral-600: #525252;
+  --color-neutral-700: #404040;
+  --color-neutral-800: #252525;
+  --color-neutral-900: #202020;
+  --color-neutral-950: #171717;
+
+  --color-blue-50: rgba(240, 247, 255, 1);
+  --color-blue-100: rgba(229, 242, 255, 1);
+  --color-blue-200: rgba(204, 229, 255, 1);
+  --color-blue-300: rgba(153, 204, 255, 1);
+  --color-blue-400: rgba(102, 178, 255, 1);
+  --color-blue-500: rgba(20, 135, 250, 1);
+  --color-blue-600: rgba(19, 128, 237, 1);
+  --color-blue-700: rgba(26, 121, 216, 1);
+  --color-blue-800: rgba(29, 103, 176, 1);
+  --color-blue-900: rgba(31, 85, 138, 1);
+  --color-blue-950: rgba(23, 54, 84, 1);
+
+  --color-green-50: rgba(232, 252, 239, 1);
+  --color-green-100: rgba(220, 252, 231, 1);
+  --color-green-200: rgba(187, 247, 208, 1);
+  --color-green-300: rgba(129, 238, 168, 1);
+  --color-green-400: rgba(65, 221, 122, 1);
+  --color-green-500: rgba(34, 197, 93, 1);
+  --color-green-600: rgba(23, 163, 74, 1);
+  --color-green-700: rgba(26, 143, 68, 1);
+  --color-green-800: rgba(23, 105, 54, 1);
+  --color-green-900: rgba(20, 83, 45, 1);
+  --color-green-950: rgba(5, 46, 22, 1);
+
+  --color-lime-50: #f3fddd;
+  --color-lime-100: #ecfbcb;
+  --color-lime-200: #d6f995;
+  --color-lime-300: #bff164;
+  --color-lime-400: #a3e635;
+  --color-lime-500: #84cc15;
+  --color-lime-600: #6bad0d;
+  --color-lime-700: #558811;
+  --color-lime-800: #426713;
+  --color-lime-900: #365313;
+  --color-lime-950: #1b2d06;
+
+  --color-orange-50: rgba(255, 247, 214, 1);
+  --color-orange-100: rgba(254, 240, 185, 1);
+  --color-orange-200: rgba(253, 226, 119, 1);
+  --color-orange-300: rgba(251, 212, 76, 1);
+  --color-orange-400: rgba(251, 191, 36, 1);
+  --color-orange-500: rgba(245, 158, 12, 1);
+  --color-orange-600: rgba(217, 119, 8, 1);
+  --color-orange-700: rgba(180, 84, 10, 1);
+  --color-orange-800: rgba(146, 64, 13, 1);
+  --color-orange-900: rgba(120, 53, 15, 1);
+  --color-orange-950: rgba(69, 27, 3, 1);
+
+  --color-cyan-50: rgba(236, 254, 255, 1);
+  --color-cyan-100: rgba(206, 250, 254, 1);
+  --color-cyan-200: rgba(165, 243, 252, 1);
+  --color-cyan-300: rgba(103, 232, 249, 1);
+  --color-cyan-400: rgba(36, 211, 238, 1);
+  --color-cyan-500: rgba(0, 195, 228, 1);
+  --color-cyan-600: rgba(2, 171, 211, 1);
+  --color-cyan-700: rgba(5, 134, 169, 1);
+  --color-cyan-800: rgba(13, 103, 131, 1);
+  --color-cyan-900: rgba(22, 78, 99, 1);
+  --color-cyan-950: rgba(9, 51, 68, 1);
+
+  --color-red-50: rgba(254, 246, 246, 1);
+  --color-red-100: rgba(254, 231, 230, 1);
+  --color-red-200: rgba(254, 215, 215, 1);
+  --color-red-300: rgba(253, 185, 185, 1);
+  --color-red-400: rgba(248, 113, 113, 1);
+  --color-red-500: rgba(239, 68, 68, 1);
+  --color-red-600: rgba(220, 38, 37, 1);
+  --color-red-700: rgba(200, 30, 29, 1);
+  --color-red-800: rgba(160, 28, 28, 1);
+  --color-red-900: rgba(127, 28, 29, 1);
+  --color-red-950: rgba(69, 10, 10, 1);
+
+  --color-purple-50: rgba(245, 243, 255, 1);
+  --color-purple-100: rgba(237, 233, 254, 1);
+  --color-purple-200: rgba(221, 214, 254, 1);
+  --color-purple-300: rgba(195, 182, 253, 1);
+  --color-purple-400: rgba(168, 139, 250, 1);
+  --color-purple-500: rgba(139, 92, 246, 1);
+  --color-purple-600: rgba(124, 58, 237, 1);
+  --color-purple-700: rgba(109, 40, 217, 1);
+  --color-purple-800: rgba(91, 33, 182, 1);
+  --color-purple-900: rgba(76, 29, 149, 1);
+  --color-purple-950: rgba(46, 16, 101, 1);
+
+  --color-indigo-50: rgba(238, 242, 255, 1);
+  --color-indigo-100: rgba(237, 233, 254, 1);
+  --color-indigo-200: rgba(221, 214, 254, 1);
+  --color-indigo-300: rgba(165, 180, 252, 1);
+  --color-indigo-400: rgba(129, 140, 248, 1);
+  --color-indigo-500: rgba(99, 102, 241, 1);
+  --color-indigo-600: rgba(79, 70, 229, 1);
+  --color-indigo-700: rgba(67, 56, 202, 1);
+  --color-indigo-800: rgba(55, 48, 163, 1);
+  --color-indigo-900: rgba(49, 46, 129, 1);
+  --color-indigo-950: rgba(30, 27, 75, 1);
+
+  --color-primary: #171717;
+  --color-primary-hover: #252525;
+  --color-primary-active: #404040;
+
+  --color-secondary: #fff;
+  --color-secondary-hover: #f9f9f9;
+  --color-secondary-active: #f6f6f6;
+
+  --color-alpha-strong: rgba(48, 48, 48, 0.2);
+  --color-light: #efefef;
+  --color-brand: #0078f0;
+  --color-destructive: #c81e1d;
+
+  --text-color-primary: #171717;
+  --text-color-secondary: rgba(48, 48, 48, 0.64);
+  --text-color-tertiary: rgba(48, 48, 48, 0.4);
+
+  --color-ghost-hover: rgba(48, 48, 48, 0.05);
+  --color-ghost-active: rgba(48, 48, 48, 0.07);
+
+  --shadow-component-inner: 0px 1px 2px -0.5px rgba(22, 25, 29, 0.04),
+    inset 0px -0.5px 0px rgba(22, 25, 29, 0.12);
+
+  --shadow-focus: 0px 0px 0px 1px #1487fa, 0px 0px 0px 4px #cce5ff;
+  --shadow-destructive: 0px 0px 0px 1px #ee3a3a, 0px 0px 0px 3px #fed7d7;
+
+  --color-semantic-positive-50: #f3fddd;
+  --color-semantic-positive-500: #84cc15;
+  --color-semantic-destructive-50: #fef6f6;
+  --color-semantic-destructive-500: #ef4444;
+}
