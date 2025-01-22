@@ -13,6 +13,7 @@ export function Root() {
             href="https://www.facebook.com/hunterhomeventilation"
             target="_blank"
             className="text-secondary hover:text-primary"
+            aria-label="Facebook"
           >
             <RiFacebookFill className="size-4" />
           </a>

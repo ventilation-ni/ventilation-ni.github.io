@@ -14,18 +14,17 @@ export function Root({ children, ...props }: RootProps) {
   );
 }
 
-interface ItemProps {
+interface ItemProps extends React.ComponentPropsWithoutRef<'a'> {
   href: string;
   children: React.ReactNode;
 }
 
-export function Item({ href, children }: ItemProps) {
+export function Item({ href, ...props }: ItemProps) {
   return (
     <Link
       href={href}
       className="text-secondary hover:bg-ghost-hover active:bg-ghost-active inline-flex h-10 items-center justify-center rounded-md px-4 text-[13px] font-medium"
-    >
-      {children}
-    </Link>
+      {...props}
+    />
   );
 }

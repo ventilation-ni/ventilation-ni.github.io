@@ -103,6 +103,9 @@ export default function Index() {
         <Navbar.Item href="#about">About</Navbar.Item>
         <Navbar.Item href="#products">Products</Navbar.Item>
         <Navbar.Item href="#contact">Contact</Navbar.Item>
+        <Navbar.Item href="https://www.facebook.com/hunterhomeventilation" target="_blank">
+          Facebook
+        </Navbar.Item>
       </Navbar.Root>
 
       <Jumbotron.Root onRequestSurvey={requestSurvey} onGetDrimaster={purchaseDrimaster}>
